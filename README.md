@@ -1,2 +1,3 @@
-# Fashion-Flow
-Oyun ve Uygulama Akademisi bootcamp projesi 
+# fashion_flow
+
+Oyun ve Uygulama Akademisi bootcamp projesi
