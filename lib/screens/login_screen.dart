@@ -21,7 +21,7 @@ class LoginScreen extends StatelessWidget {
             children: [
               SvgPicture.asset(
                 'assets/mainLogo.svg',
-                width: width * 0.7,
+                width: width * 0.65,
               ),
               const Text(
                 Strings.appTitle,
@@ -38,7 +38,7 @@ class LoginScreen extends StatelessWidget {
               ),
               const SizedBox(height: 5),
               const Text('   Lütfen hesabınıza giriş yapın    '),
-              const SizedBox(height: 10),
+              const SizedBox(height: 5),
               EmailPasswordBox(buttonText: 'Giriş', buttonFunction: () {}),
               Align(
                 alignment: Alignment.centerRight,
