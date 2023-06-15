@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fashion_flow/constants/colors.dart';
 import 'package:fashion_flow/constants/strings.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -127,8 +128,9 @@ class LoginScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('Hesabınız yok mu?'),
-                  TextButton(onPressed: () {}, child: Text('Şimdi Kaydolun!'))
+                  const Text('Hesabınız yok mu?'),
+                  TextButton(
+                      onPressed: () {}, child: const Text('Şimdi Kaydolun!'))
                 ],
               )
             ],
@@ -139,12 +141,20 @@ class LoginScreen extends StatelessWidget {
   }
 }
 
-class EmailPasswordBox extends StatelessWidget {
-  EmailPasswordBox({required this.buttonText, required this.buttonFunction});
+class EmailPasswordBox extends StatefulWidget {
+  EmailPasswordBox(
+      {super.key, required this.buttonText, required this.buttonFunction});
 
   String buttonText;
   VoidCallback buttonFunction;
+
+  @override
+  State<EmailPasswordBox> createState() => _EmailPasswordBoxState();
+}
+
+class _EmailPasswordBoxState extends State<EmailPasswordBox> {
   late String email;
+
   late String password;
 
   @override
@@ -177,7 +187,12 @@ class EmailPasswordBox extends StatelessWidget {
           },
         ),
         TextButton(
-          onPressed: () {},
+          onPressed: () {
+            FirebaseAuth.instance
+                .signInWithEmailAndPassword(email: email, password: password)
+                .then((value) => print('Giriş Başarılı'))
+                .catchError((error) => print('Giriş Başarısız'));
+          },
           child: Container(
             height: 70,
             decoration: const BoxDecoration(
@@ -186,8 +201,8 @@ class EmailPasswordBox extends StatelessWidget {
             ),
             child: Center(
               child: Text(
-                buttonText,
-                style: TextStyle(color: Colors.white),
+                widget.buttonText,
+                style: const TextStyle(color: Colors.white),
               ),
             ),
           ),

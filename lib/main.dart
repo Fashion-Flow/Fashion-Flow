@@ -1,9 +1,15 @@
 import 'package:fashion_flow/constants/colors.dart';
 import 'package:fashion_flow/screens/login_screen.dart';
+import 'package:fashion_flow/screens/registration_screen.dart';
 import 'package:flutter/material.dart';
-import '';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const FfApp());
 }
 
@@ -15,7 +21,7 @@ class FfApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(primarySwatch: Colors.pink),
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: RegistrationScreen(),
     );
   }
 }
