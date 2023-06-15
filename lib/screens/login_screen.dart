@@ -70,7 +70,7 @@ class LoginScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 15.0),
                     child: InkWell(
                       onTap: () {}, // Image tapped
                       splashColor: Colors.white10, // Splash color over image
@@ -83,7 +83,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 15.0),
                     child: InkWell(
                       onTap: () {}, // Image tapped
                       splashColor: Colors.white10, // Splash color over image
@@ -96,7 +96,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 15.0),
                     child: InkWell(
                       onTap: () {}, // Image tapped
                       splashColor: Colors.white10, // Splash color over image
@@ -110,7 +110,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 15.0),
                     child: InkWell(
                       onTap: () {}, // Image tapped
                       splashColor: Colors.white10, // Splash color over image
@@ -184,9 +184,9 @@ class EmailPasswordBox extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(20)),
               color: ffColors.Pink,
             ),
-            child: const Center(
+            child: Center(
               child: Text(
-                'Giriş',
+                buttonText,
                 style: TextStyle(color: Colors.white),
               ),
             ),
