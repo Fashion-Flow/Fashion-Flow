@@ -1,5 +1,9 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -42,6 +46,29 @@ class _HomeScreenState extends State<HomeScreen> {
       body: const Center(
         child: Text('HomeScreen'),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: () async {
+        // user will select a photo from gallery
+        XFile? file =
+            await ImagePicker().pickImage(source: ImageSource.gallery);
+        if (file == null) return;
+
+        // upload file to Firebase Storage
+        Reference firebaseRef = FirebaseStorage.instance
+            .ref()
+            .child('/${loggedInUser!.uid}/posts')
+            .child(file.name);
+        File postFile = File(file.path);
+        await firebaseRef.putFile(postFile);
+
+        // add metadata to collection
+        await FirebaseFirestore.instance.collection('posts').add({
+          'ref': firebaseRef.fullPath,
+          'sender': FirebaseAuth.instance.currentUser!.displayName,
+          'url': await firebaseRef.getDownloadURL(),
+          'text': 'test',
+          'time': FieldValue.serverTimestamp(),
+        });
+      }),
     );
   }
 }

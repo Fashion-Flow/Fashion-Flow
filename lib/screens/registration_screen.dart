@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fashion_flow/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -46,6 +47,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               const SizedBox(height: 5),
               const Text('   E-posta adresinizle kaydolun    '),
               const SizedBox(height: 5),
+              // todo
               EmailPasswordBox(buttonText: 'Kaydol', buttonFunction: () {}),
               const SizedBox(height: 10),
               const SizedBox(height: 5),
@@ -135,12 +137,26 @@ class EmailPasswordBox extends StatefulWidget {
 class _EmailPasswordBoxState extends State<EmailPasswordBox> {
   late String email;
   late String password;
+  late String username;
   bool _isLoading = false;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
+        TextField(
+          keyboardType: TextInputType.emailAddress,
+          decoration: InputDecoration(
+            border:
+                OutlineInputBorder(borderRadius: BorderRadius.circular(20.0)),
+            labelText: 'Kullanıcı adı',
+            suffixIcon: const Icon(Icons.person_outline),
+          ),
+          onChanged: (value) {
+            username = value;
+          },
+        ),
+        const SizedBox(height: 20),
         TextField(
           keyboardType: TextInputType.emailAddress,
           decoration: InputDecoration(
@@ -181,6 +197,19 @@ class _EmailPasswordBoxState extends State<EmailPasswordBox> {
                         .createUserWithEmailAndPassword(
                             email: email, password: password);
                     print('Kullanıcı oluşturuldu');
+                    final user = newUser.user;
+
+                    await user!.updateDisplayName(username);
+                    await user.reload();
+
+                    await FirebaseFirestore.instance
+                        .collection('users')
+                        .doc(username)
+                        .set({
+                      'uid': FirebaseAuth.instance.currentUser!.uid,
+                      'e-mail': FirebaseAuth.instance.currentUser!.email,
+                      'username': username,
+                    });
 
                     if (newUser != null) {
                       Navigator.pushNamed(context, HomeScreen.routeName);
