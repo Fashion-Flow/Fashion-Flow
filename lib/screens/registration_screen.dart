@@ -1,12 +1,18 @@
+import 'package:fashion_flow/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fashion_flow/constants/colors.dart';
 import 'package:fashion_flow/constants/strings.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-class RegistrationScreen extends StatelessWidget {
+class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});
 
+  @override
+  State<RegistrationScreen> createState() => _RegistrationScreenState();
+}
+
+class _RegistrationScreenState extends State<RegistrationScreen> {
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
@@ -162,13 +168,19 @@ class _EmailPasswordBoxState extends State<EmailPasswordBox> {
           },
         ),
         TextButton(
-          onPressed: () {
-            FirebaseAuth.instance
-                .createUserWithEmailAndPassword(
-                    email: email, password: password)
-                .then((value) => print('Kullanıcı oluşturuldu'))
-                .catchError(
-                    (error) => print('Kullanıcı oluşturma başarısız: $error'));
+          onPressed: () async {
+            try {
+              final UserCredential newUser = await FirebaseAuth.instance
+                  .createUserWithEmailAndPassword(
+                      email: email, password: password);
+              print('Kullanıcı oluşturuldu');
+
+              if (newUser != null) {
+                Navigator.pushNamed(context, HomeScreen.routeName);
+              }
+            } catch (e) {
+              print('Kullanıcı oluşturma başarısız: $e');
+            }
           },
           child: Container(
             height: 70,

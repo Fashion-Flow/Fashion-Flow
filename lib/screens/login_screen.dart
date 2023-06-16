@@ -4,6 +4,8 @@ import 'package:fashion_flow/constants/colors.dart';
 import 'package:fashion_flow/constants/strings.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import 'home_screen.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
@@ -130,7 +132,10 @@ class LoginScreen extends StatelessWidget {
                 children: [
                   const Text('Hesabınız yok mu?'),
                   TextButton(
-                      onPressed: () {}, child: const Text('Şimdi Kaydolun!'))
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/register');
+                      },
+                      child: const Text('Şimdi Kaydolun!'))
                 ],
               )
             ],
@@ -187,11 +192,18 @@ class _EmailPasswordBoxState extends State<EmailPasswordBox> {
           },
         ),
         TextButton(
-          onPressed: () {
-            FirebaseAuth.instance
-                .signInWithEmailAndPassword(email: email, password: password)
-                .then((value) => print('Giriş Başarılı'))
-                .catchError((error) => print('Giriş Başarısız'));
+          onPressed: () async {
+            try {
+              final UserCredential user = await FirebaseAuth.instance
+                  .signInWithEmailAndPassword(email: email, password: password);
+              print('Kullanıcı girişi başarılı: $user');
+
+              if (user != null) {
+                Navigator.pushNamed(context, HomeScreen.routeName);
+              }
+            } catch (e) {
+              print('Kullanıcı girişi başarısız: $e');
+            }
           },
           child: Container(
             height: 70,

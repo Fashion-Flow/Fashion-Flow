@@ -1,4 +1,5 @@
 import 'package:fashion_flow/constants/colors.dart';
+import 'package:fashion_flow/screens/home_screen.dart';
 import 'package:fashion_flow/screens/login_screen.dart';
 import 'package:fashion_flow/screens/registration_screen.dart';
 import 'package:flutter/material.dart';
@@ -19,9 +20,13 @@ class FfApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.pink),
-      debugShowCheckedModeBanner: false,
-      home: RegistrationScreen(),
-    );
+        theme: ThemeData(primarySwatch: Colors.pink),
+        debugShowCheckedModeBanner: false,
+        home: RegistrationScreen(),
+        routes: {
+          '/login': (context) => const LoginScreen(),
+          '/registration': (context) => const RegistrationScreen(),
+          '/home': (context) => const HomeScreen(),
+        });
   }
 }
