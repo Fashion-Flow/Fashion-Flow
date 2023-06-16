@@ -14,7 +14,6 @@ F-7 Team Fashion Flow
 
 ## Ürün Açıklaması
 
-
 Fashion Flow, moda severlerin en sevdikleri giysi ve aksesuarları paylaştığı bir moda odaklı sosyal platformdur. Kullanıcılar, bir ürünün nereden bulunabileceğini, hangi ürünleri seçmeleri gerektiğini, yeni satın aldıkları ürünleri ve giyim kombinasyonlarını paylaşabilirler. Fashion Flow, moda meraklılarının giyim ve stil tercihlerine yeni bir soluk getirir, ve kullanıcıların kendi moda yolculuklarını anlamalarını ve geliştirmelerini kolaylaştırır. Ayrıca, kullanıcılar arasında moda ve stil konusunda bilgi alışverişini teşvik ederek topluluk oluşturur ve bu sayede kullanıcıların daha bilinçli ve kendinden emin moda seçimleri yapmalarına yardımcı olur. Kullanım 4 benzersiz etiket çevresinde planlanmıştır:
 
 #NeredeBulurum: Bu etiket, kullanıcıların beğendikleri ama nereden bulacaklarını bilmedikleri ürünler için topluluktan yardım almasını sağlar. Bu özellik, kullanıcıların moda buluşlarını paylaşmalarını ve aynı zamanda daha geniş bir topluluğun yardımını almasını teşvik eder.
