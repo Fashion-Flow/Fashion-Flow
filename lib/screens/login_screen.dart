@@ -159,8 +159,8 @@ class EmailPasswordBox extends StatefulWidget {
 
 class _EmailPasswordBoxState extends State<EmailPasswordBox> {
   late String email;
-
   late String password;
+  bool _isLoading = false;
 
   @override
   Widget build(BuildContext context) {
@@ -191,34 +191,46 @@ class _EmailPasswordBoxState extends State<EmailPasswordBox> {
             password = value;
           },
         ),
-        TextButton(
-          onPressed: () async {
-            try {
-              final UserCredential user = await FirebaseAuth.instance
-                  .signInWithEmailAndPassword(email: email, password: password);
-              print('Kullanıcı girişi başarılı: $user');
+        _isLoading // If _isLoading is true, show spinner, else show button
+            ? CircularProgressIndicator()
+            : TextButton(
+                onPressed: () async {
+                  setState(() {
+                    _isLoading = true; // Start loading
+                  });
+                  try {
+                    final UserCredential user = await FirebaseAuth.instance
+                        .signInWithEmailAndPassword(
+                            email: email, password: password);
+                    print('Kullanıcı girişi başarılı: $user');
 
-              if (user != null) {
-                Navigator.pushNamed(context, HomeScreen.routeName);
-              }
-            } catch (e) {
-              print('Kullanıcı girişi başarısız: $e');
-            }
-          },
-          child: Container(
-            height: 70,
-            decoration: const BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(20)),
-              color: ffColors.Pink,
-            ),
-            child: Center(
-              child: Text(
-                widget.buttonText,
-                style: const TextStyle(color: Colors.white),
+                    if (user != null) {
+                      Navigator.pushNamed(context, HomeScreen.routeName);
+                    }
+                  } catch (e) {
+                    print('Kullanıcı girişi başarısız: $e');
+                  } finally {
+                    if (mounted) {
+                      setState(() {
+                        _isLoading = false; // End loading
+                      });
+                    }
+                  }
+                },
+                child: Container(
+                  height: 70,
+                  decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    color: ffColors.Pink,
+                  ),
+                  child: Center(
+                    child: Text(
+                      widget.buttonText,
+                      style: const TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
               ),
-            ),
-          ),
-        ),
       ],
     );
   }
