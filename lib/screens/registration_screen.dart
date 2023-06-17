@@ -137,8 +137,59 @@ class EmailPasswordBox extends StatefulWidget {
 class _EmailPasswordBoxState extends State<EmailPasswordBox> {
   late String email;
   late String password;
+  late String confirmPassword;
   late String username;
-  bool _isLoading = false;
+
+  register() async {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) => const Center(
+        child: CircularProgressIndicator(),
+      ),
+    );
+    if (password != confirmPassword) {
+      Navigator.pop(context);
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: const Text('Şifreler eşleşmiyor'),
+        ),
+      );
+      return;
+    }
+
+    try {
+      // register user
+      final UserCredential newUser = await FirebaseAuth.instance
+          .createUserWithEmailAndPassword(email: email, password: password);
+      print('Kullanıcı oluşturuldu');
+
+      // Update the username
+      final user = newUser.user;
+      await user!.updateDisplayName(username);
+      await user.reload();
+
+      // create a new document for the user with the uid
+      await FirebaseFirestore.instance.collection('users').doc(username).set({
+        'uid': FirebaseAuth.instance.currentUser!.uid,
+        'e-mail': FirebaseAuth.instance.currentUser!.email,
+        'username': username,
+      });
+      if (context.mounted) Navigator.pop(context);
+
+      if (newUser != null) {
+        Navigator.pushNamed(context, HomeScreen.routeName);
+      }
+    } catch (e) {
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: const Text('Hata'),
+          content: Text(e.toString()),
+        ),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -156,7 +207,7 @@ class _EmailPasswordBoxState extends State<EmailPasswordBox> {
             username = value;
           },
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 10),
         TextField(
           keyboardType: TextInputType.emailAddress,
           decoration: InputDecoration(
@@ -171,7 +222,7 @@ class _EmailPasswordBoxState extends State<EmailPasswordBox> {
             print(email);
           },
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 10),
         TextField(
           obscureText: true,
           decoration: InputDecoration(
@@ -184,60 +235,37 @@ class _EmailPasswordBoxState extends State<EmailPasswordBox> {
             password = value;
           },
         ),
-        _isLoading // If _isLoading is true, show spinner, else show button
-            ? CircularProgressIndicator()
-            : TextButton(
-                onPressed: () async {
-                  setState(() {
-                    _isLoading = true; // Start loading
-                  });
-
-                  try {
-                    final UserCredential newUser = await FirebaseAuth.instance
-                        .createUserWithEmailAndPassword(
-                            email: email, password: password);
-                    print('Kullanıcı oluşturuldu');
-                    final user = newUser.user;
-
-                    await user!.updateDisplayName(username);
-                    await user.reload();
-
-                    await FirebaseFirestore.instance
-                        .collection('users')
-                        .doc(username)
-                        .set({
-                      'uid': FirebaseAuth.instance.currentUser!.uid,
-                      'e-mail': FirebaseAuth.instance.currentUser!.email,
-                      'username': username,
-                    });
-
-                    if (newUser != null) {
-                      Navigator.pushNamed(context, HomeScreen.routeName);
-                    }
-                  } catch (e) {
-                    print('Kullanıcı oluşturma başarısız: $e');
-                  } finally {
-                    if (mounted) {
-                      setState(() {
-                        _isLoading = false; // End loading
-                      });
-                    }
-                  }
-                },
-                child: Container(
-                  height: 70,
-                  decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(20)),
-                    color: ffColors.Pink,
-                  ),
-                  child: Center(
-                    child: Text(
-                      widget.buttonText,
-                      style: const TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
+        const SizedBox(height: 10),
+        TextField(
+          obscureText: true,
+          decoration: InputDecoration(
+            border:
+                OutlineInputBorder(borderRadius: BorderRadius.circular(20.0)),
+            labelText: 'Parolayı onayla',
+            suffixIcon: const Icon(Icons.lock_outlined),
+          ),
+          onChanged: (value) {
+            confirmPassword = value;
+          },
+        ),
+        TextButton(
+          onPressed: () {
+            register();
+          },
+          child: Container(
+            height: 70,
+            decoration: const BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(20)),
+              color: ffColors.Pink,
+            ),
+            child: Center(
+              child: Text(
+                widget.buttonText,
+                style: const TextStyle(color: Colors.white),
               ),
+            ),
+          ),
+        ),
       ],
     );
   }
