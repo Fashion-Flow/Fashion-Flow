@@ -26,17 +26,17 @@ Fashion Flow, moda severlerin en sevdikleri giysi ve aksesuarları paylaştığ�
 
 ## Ürün Özellikleri
 
-Bir ürünün nereden bulunabileceği hakkında topluluk bilgisi toplama özelliği.
-Kullanıcıların moda ve stil seçimlerini paylaşmaları ve topluluktan geri bildirim alabilmesi.
-Kullanıcıların yeni satın aldıkları ürünleri ve giyim kombinasyonlarını paylaşma ve topluluk tarafından alınan geri bildirime göre seçimlerini iyileştirme özelliği.
-Moda ve stil konusunda bilgi ve deneyim alışverişi yapma ve topluluk oluşturma özelliği.
+-Bir ürünün nereden bulunabileceği hakkında topluluk bilgisi toplama özelliği.
+-Kullanıcıların moda ve stil seçimlerini paylaşmaları ve topluluktan geri bildirim alabilmesi.
+-Kullanıcıların yeni satın aldıkları ürünleri ve giyim kombinasyonlarını paylaşma ve topluluk tarafından alınan geri bildirime göre seçimlerini iyileştirme özelliği.
+-Moda ve stil konusunda bilgi ve deneyim alışverişi yapma ve topluluk oluşturma özelliği.
 
 ## Hedef Kitle
 
-Moda ve stil meraklıları
-Alışveriş severler
-Moda ve tarz konusunda bilgi ve geri bildirim almak isteyenler
-Moda trendlerini takip etmek isteyenler
-Giyim ve aksesuar seçimlerinde topluluk desteği arayanlar
-Moda ve stil konusunda bilgi ve deneyimlerini paylaşmak isteyenler.
+-Moda ve stil meraklıları
+-Alışveriş severler
+-Moda ve tarz konusunda bilgi ve geri bildirim almak isteyenler
+-Moda trendlerini takip etmek isteyenler
+-Giyim ve aksesuar seçimlerinde topluluk desteği arayanlar. 
+-Moda ve stil konusunda bilgi ve deneyimlerini paylaşmak isteyenler.
 
