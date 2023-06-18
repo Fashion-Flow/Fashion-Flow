@@ -57,8 +57,8 @@ Fashion Flow, moda severlerin en sevdikleri giysi ve aksesuarları paylaştığ�
 Backlog düzenlemesinde, öncelikle projenin temel özelliklerini tanımladık. Bu özellikler arasında ürün bilgisi toplama, stil seçimlerini paylaşma ve geri bildirim alma, yeni ürünler ve kombinasyonları paylaşma, ve moda konusunda bilgi alışverişi yapma yer alıyor. Bu temel özellikler, kullanıcıların platformumuzdan beklentilerini karşılayacak ve onların moda yolculuklarında yardımcı olacak niteliktedir.
 Her bir sprint döneminde, en öncelikli ve en çok değer katacak story'leri belirlemek için takım içinde tartışmalar yapılmaktadır. Bu sayede, her sprint döneminde projenin gelişimine maksimum katkı sağlanmaktadır. Bu sprint'te toplamda 80 puanlık bir hedef belirlenmiştir, çünkü takımın kapasitesi ve öncelikli işlevler dikkate alındığında bu hedefin en uygun olduğu sonucuna varılmıştır. Bu hedefler, takımın sürekli iletişim halinde olması ve işlerin durumunu düzenli olarak değerlendirmesi sayesinde gerçekleştirilebilmektedir.
 
-Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
+ **Daily Scrum**: Zamansal nedenlerden dolayı, Daily Scrum toplantılarını gerçekleştirmek için Discord platformunu kullanmaya karar verdik. Aşağıdaki örnek, Daily Scrum toplantısı hakkında bilgileri içeren bir JPEG veya Word belgesini Readme dosyamızda bulabilirsiniz.: [Sprint 1 Daily Scrum Chats][daily.docx](https://github.com/Fashion-Flow/Fashion-Flow/files/11782662/daily.docx)
 
 
 
@@ -71,6 +71,7 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 
 - **Ürün Durumu**: Ekran görüntüleri:
   ![Screenshot 1]<img width="351" alt="Ekran Resmi 2023-06-19 00 27 54" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/c3c267a8-a564-4426-9a68-9c0960d4b744">
+  
 
   ![Screenshot 2]<img width="351" alt="Ekran Resmi 2023-06-19 00 28 03" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/5d7bd182-4da7-4cda-92f5-bea47aec555b">
 
