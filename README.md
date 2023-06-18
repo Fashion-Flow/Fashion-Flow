@@ -58,7 +58,9 @@ Backlog düzenlemesinde, öncelikle projenin temel özelliklerini tanımladık. 
 Her bir sprint döneminde, en öncelikli ve en çok değer katacak story'leri belirlemek için takım içinde tartışmalar yapılmaktadır. Bu sayede, her sprint döneminde projenin gelişimine maksimum katkı sağlanmaktadır. Bu sprint'te toplamda 80 puanlık bir hedef belirlenmiştir, çünkü takımın kapasitesi ve öncelikli işlevler dikkate alındığında bu hedefin en uygun olduğu sonucuna varılmıştır. Bu hedefler, takımın sürekli iletişim halinde olması ve işlerin durumunu düzenli olarak değerlendirmesi sayesinde gerçekleştirilebilmektedir.
 
 
- **Daily Scrum**: Zamansal nedenlerden dolayı, Daily Scrum toplantılarını gerçekleştirmek için Discord platformunu kullanmaya karar verdik. Aşağıdaki örnek, Daily Scrum toplantısı hakkında bilgileri içeren bir JPEG veya Word belgesini Readme dosyamızda bulabilirsiniz.: [Sprint 1 Daily Scrum Chats][daily.docx](https://github.com/Fashion-Flow/Fashion-Flow/files/11782662/daily.docx)
+ **Daily Scrum**: Zamansal nedenlerden dolayı, Daily Scrum toplantılarını gerçekleştirmek için Discord platformunu kullanmaya karar verdik. Aşağıdaki örnek, Daily Scrum toplantısı hakkında bilgileri içeren bir JPEG veya Word belgesini Readme dosyamızda bulabilirsiniz.: 
+
+[Sprint 1 Daily Scrum Chats][daily.docx](https://github.com/Fashion-Flow/Fashion-Flow/files/11782662/daily.docx)
 
 
 
