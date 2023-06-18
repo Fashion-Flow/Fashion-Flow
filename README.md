@@ -72,10 +72,15 @@ Her bir sprint döneminde, en öncelikli ve en çok değer katacak story'leri be
 ![Backlog 3]<img width="1710" alt="Ekran Resmi 2023-06-19 00 06 00" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/f3f1545e-159d-423b-8728-3401bc8028b8">
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1]<img width="351" alt="Ekran Resmi 2023-06-19 00 27 54" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/c3c267a8-a564-4426-9a68-9c0960d4b744">
+
+  ![Screenshot 1]
+
+<img width="351" alt="Ekran Resmi 2023-06-19 00 27 54" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/c3c267a8-a564-4426-9a68-9c0960d4b744">
   
 
-  ![Screenshot 2]<img width="351" alt="Ekran Resmi 2023-06-19 00 28 03" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/5d7bd182-4da7-4cda-92f5-bea47aec555b">
+  ![Screenshot 2]
+
+<img width="351" alt="Ekran Resmi 2023-06-19 00 28 03" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/5d7bd182-4da7-4cda-92f5-bea47aec555b">
 
   
   - **Sprint Review**: 
