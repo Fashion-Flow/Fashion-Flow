@@ -40,3 +40,5 @@ Fashion Flow, moda severlerin en sevdikleri giysi ve aksesuarları paylaştığ�
 -Giyim ve aksesuar seçimlerinde topluluk desteği arayanlar. 
 -Moda ve stil konusunda bilgi ve deneyimlerini paylaşmak isteyenler.
 
+##Product Backlog URL
+[Miro Backlog Board](https://miro.com/app/board/uXjVM_ExQig=/)
