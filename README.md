@@ -37,6 +37,6 @@ Moda ve stil meraklıları
 Alışveriş severler
 Moda ve tarz konusunda bilgi ve geri bildirim almak isteyenler
 Moda trendlerini takip etmek isteyenler
-Giyim ve aksesuar seçimlerinde topluluk desteği arayanlar
+Giyim ve aksesuar seçimlerinde topluluk desteği arayanlar.
 Moda ve stil konusunda bilgi ve deneyimlerini paylaşmak isteyenler.
 
