@@ -40,5 +40,27 @@ Fashion Flow, moda severlerin en sevdikleri giysi ve aksesuarları paylaştığ�
 -Giyim ve aksesuar seçimlerinde topluluk desteği arayanlar. 
 -Moda ve stil konusunda bilgi ve deneyimlerini paylaşmak isteyenler.
 
-##Product Backlog URL
+## Product Backlog URL
+
 [Miro Backlog Board](https://miro.com/app/board/uXjVM_ExQig=/)
+
+# Sprint 1
+
+- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 80 Puan
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. Takım arkadaşlarımızın. değişikliğinden dolayı fikirleri tekrar tartışıp fikir konusunda karar vermemiz zorlaştığı için bu sprintin 80 puan ile sonuçlanması gerektiğine karar verildi.
+
+- **Backlog düzeni ve Story seçimleri**:Takımımız, "Fashion Flow" adlı moda odaklı sosyal platformunun geliştirilmesi sürecinde, backlog düzeni ve story seçimlerinde belirli bir strateji izlemiştir. Projemizin genel yapısını ve işlevlerini göz önünde bulundurarak, en çok değer katacak ve kullanıcı deneyimini iyileştirecek özellikleri belirlemeye çalıştık.
+
+Backlog düzenlemesinde, öncelikle projenin temel özelliklerini tanımladık. Bu özellikler arasında ürün bilgisi toplama, stil seçimlerini paylaşma ve geri bildirim alma, yeni ürünler ve kombinasyonları paylaşma, ve moda konusunda bilgi alışverişi yapma yer alıyor. Bu temel özellikler, kullanıcıların platformumuzdan beklentilerini karşılayacak ve onların moda yolculuklarında yardımcı olacak niteliktedir.
+Her bir sprint döneminde, en öncelikli ve en çok değer katacak story'leri belirlemek için takım içinde tartışmalar yapılmaktadır. Bu sayede, her sprint döneminde projenin gelişimine maksimum katkı sağlanmaktadır. Bu sprint'te toplamda 80 puanlık bir hedef belirlenmiştir, çünkü takımın kapasitesi ve öncelikli işlevler dikkate alındığında bu hedefin en uygun olduğu sonucuna varılmıştır. Bu hedefler, takımın sürekli iletişim halinde olması ve işlerin durumunu düzenli olarak değerlendirmesi sayesinde gerçekleştirilebilmektedir.
+
+Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
+
+
+
+
+- **Sprint board update**: Sprint board screenshotları: 
+![Backlog 1]<img width="1710" alt="Ekran Resmi 2023-06-19 00 02 56" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/77f76cf4-8757-432a-9012-520c5e63da56">
