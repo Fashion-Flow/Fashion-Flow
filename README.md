@@ -64,3 +64,30 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![Backlog 1]<img width="1710" alt="Ekran Resmi 2023-06-19 00 02 56" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/77f76cf4-8757-432a-9012-520c5e63da56">
+
+![Backlog 2]<img width="1710" alt="Ekran Resmi 2023-06-19 00 04 23" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/228449c5-5bc8-4838-984c-c14602289040">
+
+![Backlog 3]<img width="1710" alt="Ekran Resmi 2023-06-19 00 06 00" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/f3f1545e-159d-423b-8728-3401bc8028b8">
+  
+  - **Sprint Review**: 
+Alınan kararlar:
+Ekstra koyulması gereken özellikler belirlenmiştir.
+
+
+- **Sprint Retrospective:**
+  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır
+  - Tahmin puanları gözden geçirilmeli ve sprint planlama toplantılarında gerekli geri bildirimlerin developer'lar tarafından verildiğine emin olunmalı
+
+-**Diğer Notlar**:
+- N/A
+
+---
+
+# Sprint 2
+
+
+---
+
+# Sprint 3
+
+---
