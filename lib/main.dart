@@ -31,7 +31,7 @@ class FfApp extends StatelessWidget {
     return MaterialApp(
         theme: ThemeData(primarySwatch: Colors.pink),
         debugShowCheckedModeBanner: false,
-        home: LoginScreen(),
+        home: HomeScreen(),
         routes: {
           '/login': (context) => const LoginScreen(),
           '/register': (context) => const RegistrationScreen(),
