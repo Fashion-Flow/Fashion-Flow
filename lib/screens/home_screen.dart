@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:fashion_flow/components/postBox.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -43,8 +44,31 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text('HomeScreen'),
       ),
-      body: const Center(
-        child: Text('HomeScreen'),
+      body: Center(
+        child: StreamBuilder(
+            stream: FirebaseFirestore.instance
+                .collection('posts')
+                .orderBy('time', descending: true)
+                .snapshots(),
+            builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
+              if (!snapshot.hasData) {
+                return const Center(
+                  child: CircularProgressIndicator(),
+                );
+              }
+              return ListView.builder(
+                  itemCount: snapshot.data!.docs.length,
+                  itemBuilder: (context, index) {
+                    DocumentSnapshot post = snapshot.data!.docs[index];
+                    return Post(
+                      postImageUrl: post['url'],
+                      postText: post['text'],
+                      userName: post['sender'],
+                      postId: post.id,
+                      likes: List<String>.from(post['likes'] ?? []),
+                    );
+                  });
+            }),
       ),
       floatingActionButton: FloatingActionButton(onPressed: () async {
         // user will select a photo from gallery
@@ -65,8 +89,9 @@ class _HomeScreenState extends State<HomeScreen> {
           'ref': firebaseRef.fullPath,
           'sender': FirebaseAuth.instance.currentUser!.displayName,
           'url': await firebaseRef.getDownloadURL(),
-          'text': 'test',
+          'text': 'test description',
           'time': FieldValue.serverTimestamp(),
+          'likes': [],
         });
       }),
     );
