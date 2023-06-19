@@ -26,17 +26,82 @@ Fashion Flow, moda severlerin en sevdikleri giysi ve aksesuarları paylaştığ�
 
 ## Ürün Özellikleri
 
-Bir ürünün nereden bulunabileceği hakkında topluluk bilgisi toplama özelliği.
-Kullanıcıların moda ve stil seçimlerini paylaşmaları ve topluluktan geri bildirim alabilmesi.
-Kullanıcıların yeni satın aldıkları ürünleri ve giyim kombinasyonlarını paylaşma ve topluluk tarafından alınan geri bildirime göre seçimlerini iyileştirme özelliği.
-Moda ve stil konusunda bilgi ve deneyim alışverişi yapma ve topluluk oluşturma özelliği.
+-Bir ürünün nereden bulunabileceği hakkında topluluk bilgisi toplama özelliği.
+-Kullanıcıların moda ve stil seçimlerini paylaşmaları ve topluluktan geri bildirim alabilmesi.
+-Kullanıcıların yeni satın aldıkları ürünleri ve giyim kombinasyonlarını paylaşma ve topluluk tarafından alınan geri bildirime göre seçimlerini iyileştirme özelliği.
+-Moda ve stil konusunda bilgi ve deneyim alışverişi yapma ve topluluk oluşturma özelliği.
 
 ## Hedef Kitle
 
-Moda ve stil meraklıları
-Alışveriş severler
-Moda ve tarz konusunda bilgi ve geri bildirim almak isteyenler
-Moda trendlerini takip etmek isteyenler
-Giyim ve aksesuar seçimlerinde topluluk desteği arayanlar
-Moda ve stil konusunda bilgi ve deneyimlerini paylaşmak isteyenler.
+-Moda ve stil meraklıları
+-Alışveriş severler
+-Moda ve tarz konusunda bilgi ve geri bildirim almak isteyenler
+-Moda trendlerini takip etmek isteyenler
+-Giyim ve aksesuar seçimlerinde topluluk desteği arayanlar. 
+-Moda ve stil konusunda bilgi ve deneyimlerini paylaşmak isteyenler.
 
+## Product Backlog URL
+
+[Miro Backlog Board](https://miro.com/app/board/uXjVM_ExQig=/)
+
+# Sprint 1
+
+- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 80 Puan
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. Takım arkadaşlarımızın. değişikliğinden dolayı fikirleri tekrar tartışıp fikir konusunda karar vermemiz zorlaştığı için bu sprintin 80 puan ile sonuçlanması gerektiğine karar verildi.
+
+- **Backlog düzeni ve Story seçimleri**:Takımımız, "Fashion Flow" adlı moda odaklı sosyal platformunun geliştirilmesi sürecinde, backlog düzeni ve story seçimlerinde belirli bir strateji izlemiştir. Projemizin genel yapısını ve işlevlerini göz önünde bulundurarak, en çok değer katacak ve kullanıcı deneyimini iyileştirecek özellikleri belirlemeye çalıştık.
+
+Backlog düzenlemesinde, öncelikle projenin temel özelliklerini tanımladık. Bu özellikler arasında ürün bilgisi toplama, stil seçimlerini paylaşma ve geri bildirim alma, yeni ürünler ve kombinasyonları paylaşma, ve moda konusunda bilgi alışverişi yapma yer alıyor. Bu temel özellikler, kullanıcıların platformumuzdan beklentilerini karşılayacak ve onların moda yolculuklarında yardımcı olacak niteliktedir.
+Her bir sprint döneminde, en öncelikli ve en çok değer katacak story'leri belirlemek için takım içinde tartışmalar yapılmaktadır. Bu sayede, her sprint döneminde projenin gelişimine maksimum katkı sağlanmaktadır. Bu sprint'te toplamda 80 puanlık bir hedef belirlenmiştir, çünkü takımın kapasitesi ve öncelikli işlevler dikkate alındığında bu hedefin en uygun olduğu sonucuna varılmıştır. Bu hedefler, takımın sürekli iletişim halinde olması ve işlerin durumunu düzenli olarak değerlendirmesi sayesinde gerçekleştirilebilmektedir.
+
+
+ **Daily Scrum**: Zamansal nedenlerden dolayı, Daily Scrum toplantılarını gerçekleştirmek için Discord platformunu kullanmaya karar verdik. Aşağıdaki örnek, Daily Scrum toplantısı hakkında bilgileri içeren bir JPEG veya Word belgesini Readme dosyamızda bulabilirsiniz.: 
+
+[Sprint 1 Daily Scrum Chats][daily.docx](https://github.com/Fashion-Flow/Fashion-Flow/files/11782662/daily.docx)
+
+
+
+- **Sprint board update**: Sprint board screenshotları: 
+![Backlog 1]<img width="1710" alt="Ekran Resmi 2023-06-19 00 02 56" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/77f76cf4-8757-432a-9012-520c5e63da56">
+
+![Backlog 2]<img width="1710" alt="Ekran Resmi 2023-06-19 00 04 23" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/228449c5-5bc8-4838-984c-c14602289040">
+
+![Backlog 3]<img width="1710" alt="Ekran Resmi 2023-06-19 00 06 00" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/f3f1545e-159d-423b-8728-3401bc8028b8">
+
+- **Ürün Durumu**: Ekran görüntüleri:
+
+  ![Screenshot 1]
+
+<img width="351" alt="Ekran Resmi 2023-06-19 00 27 54" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/c3c267a8-a564-4426-9a68-9c0960d4b744">
+  
+
+  ![Screenshot 2]
+
+<img width="351" alt="Ekran Resmi 2023-06-19 00 28 03" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/5d7bd182-4da7-4cda-92f5-bea47aec555b">
+
+  
+  - **Sprint Review**: 
+Alınan kararlar:
+Ekstra koyulması gereken özellikler belirlenmiştir.
+
+
+- **Sprint Retrospective:**
+  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır
+  - Tahmin puanları gözden geçirilmeli ve sprint planlama toplantılarında gerekli geri bildirimlerin developer'lar tarafından verildiğine emin olunmalı
+
+-**Diğer Notlar**:
+- N/A
+
+---
+
+# Sprint 2
+
+
+---
+
+# Sprint 3
+
+---
