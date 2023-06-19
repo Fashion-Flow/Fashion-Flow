@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
-class Notification_Screen extends StatefulWidget {
-  const Notification_Screen({super.key});
+class NotificationScreen extends StatefulWidget {
+  const NotificationScreen({super.key});
 
   @override
-  State<Notification_Screen> createState() => _Notification_ScreenState();
+  State<NotificationScreen> createState() => _NotificationScreenState();
 }
 
-class _Notification_ScreenState extends State<Notification_Screen> {
+class _NotificationScreenState extends State<NotificationScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Text("Bildirimler"),);
+    return Center(
+      child: Text('Notification Page',style: Theme.of(context).textTheme.titleLarge?.copyWith(color: Colors.black)),
+    );
   }
 }

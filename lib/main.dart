@@ -1,3 +1,4 @@
+import 'package:fashion_flow/components/navigation_bar.dart';
 import 'package:fashion_flow/constants/colors.dart';
 import 'package:fashion_flow/screens/home_screen.dart';
 import 'package:fashion_flow/screens/login_screen.dart';
@@ -31,7 +32,7 @@ class FfApp extends StatelessWidget {
     return MaterialApp(
         theme: ThemeData(primarySwatch: Colors.pink),
         debugShowCheckedModeBanner: false,
-        home: HomeScreen(),
+        home: BottomNavBar(),
         routes: {
           '/login': (context) => const LoginScreen(),
           '/register': (context) => const RegistrationScreen(),

@@ -10,6 +10,8 @@ class Camera extends StatefulWidget {
 class _CameraState extends State<Camera> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Text("Kamera"),);
+    return Center(
+      child: Text('Camera Page',style: Theme.of(context).textTheme.titleLarge?.copyWith(color: Colors.black)),
+    );
   }
 }
