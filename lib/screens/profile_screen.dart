@@ -10,6 +10,8 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Text("Profil Sayfası"),);
+    return Center(
+      child: Text('Profile Page',style: Theme.of(context).textTheme.titleLarge?.copyWith(color: Colors.black)),
+    );
   }
 }
