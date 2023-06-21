@@ -50,6 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
             // logout from firestore
             FirebaseAuth.instance.signOut();
             Navigator.pop(context);
+            Navigator.pushNamed(context, '/login');
           },
           icon: const Icon(
             Icons.arrow_back_ios,
