@@ -22,14 +22,16 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       backgroundColor: Colors.white,
       body: SafeArea(
           child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+          child: ListView(
             children: [
-              SvgPicture.asset(
-                'assets/mainLogo.svg',
-                width: width * 0.65,
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 20.0),
+                child: SvgPicture.asset(
+                  'assets/mainLogo.svg',
+                  width: width * 0.65,
+                ),
               ),
               const Text(
                 Strings.appTitle,
