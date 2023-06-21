@@ -10,6 +10,8 @@ class ExploreScreen extends StatefulWidget {
 class _ExploreScreenState extends State<ExploreScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Text("Keşfet"),);
+    return  Center(
+      child: Text('Explore Page',style: Theme.of(context).textTheme.titleLarge?.copyWith(color: Colors.black)),
+    );
   }
 }

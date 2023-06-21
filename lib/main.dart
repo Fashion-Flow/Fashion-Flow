@@ -1,3 +1,4 @@
+import 'package:fashion_flow/components/navigation_bar.dart';
 import 'package:fashion_flow/constants/colors.dart';
 import 'package:fashion_flow/screens/home_screen.dart';
 import 'package:fashion_flow/screens/login_screen.dart';
