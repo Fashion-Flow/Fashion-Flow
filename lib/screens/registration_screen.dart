@@ -159,6 +159,20 @@ class _EmailPasswordBoxState extends State<EmailPasswordBox> {
     }
 
     try {
+      // check if username exists
+      var collectionRef = await FirebaseFirestore.instance.collection('users');
+      var doc = await collectionRef.doc(username).get();
+      if (doc.exists) {
+        Navigator.pop(context);
+        showDialog(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: const Text('Bu kullanıcı adı zaten alınmış'),
+          ),
+        );
+        return;
+      }
+
       // register user
       final UserCredential newUser = await FirebaseAuth.instance
           .createUserWithEmailAndPassword(email: email, password: password);
