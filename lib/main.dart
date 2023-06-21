@@ -2,6 +2,7 @@ import 'package:fashion_flow/constants/colors.dart';
 import 'package:fashion_flow/screens/home_screen.dart';
 import 'package:fashion_flow/screens/login_screen.dart';
 import 'package:fashion_flow/screens/registration_screen.dart';
+import 'package:fashion_flow/services/auth_check.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -32,7 +33,7 @@ class FfApp extends StatelessWidget {
     return MaterialApp(
         theme: ThemeData(primarySwatch: Colors.pink),
         debugShowCheckedModeBanner: false,
-        home: LoginScreen(),
+        home: const AuthCheck(),
         routes: {
           '/login': (context) => const LoginScreen(),
           '/register': (context) => const RegistrationScreen(),
