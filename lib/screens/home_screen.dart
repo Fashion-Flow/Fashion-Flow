@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:fashion_flow/components/postBox.dart';
 import 'package:flutter/material.dart';
+import 'package:fashion_flow/constants/colors.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:image_picker/image_picker.dart';
@@ -42,7 +43,20 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('HomeScreen'),
+        backgroundColor: ffColors.Pink,
+        elevation: 0,
+        title: Text('Homescreen'),
+        leading: IconButton(
+          onPressed: () {
+            // logout from firestore
+            FirebaseAuth.instance.signOut();
+            Navigator.pop(context);
+          },
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            color: Colors.black,
+          ),
+        ),
       ),
       body: Center(
         child: StreamBuilder(
