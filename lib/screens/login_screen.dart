@@ -1,10 +1,9 @@
+import 'package:fashion_flow/components/navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fashion_flow/constants/colors.dart';
 import 'package:fashion_flow/constants/strings.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-
-import 'home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -207,7 +206,7 @@ class _EmailPasswordBoxState extends State<EmailPasswordBox> {
                     print('Kullanıcı girişi başarılı: $user');
 
                     if (user != null) {
-                      Navigator.pushNamed(context, HomeScreen.routeName);
+                      Navigator.pushNamed(context, Navigation.routeName);
                     }
                   } catch (e) {
                     print('Kullanıcı girişi başarısız: $e');
