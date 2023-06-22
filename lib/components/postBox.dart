@@ -10,7 +10,7 @@ class Post extends StatefulWidget {
   final String postId;
   final List<String> likes;
 
-  Post(
+  const Post(
       {super.key,
       required this.postImageUrl,
       required this.postText,
@@ -59,40 +59,54 @@ class _PostState extends State<Post> {
       ),
       padding: const EdgeInsets.all(10.0),
       margin: const EdgeInsets.all(10.0),
-      height: 400.0,
-      child: Row(
-        children: [
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  widget.userName,
-                  style: TextStyle(fontWeight: FontWeight.bold),
+      child: IntrinsicHeight(
+        // expensive widget...
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey[200],
+                  borderRadius: BorderRadius.circular(10.0),
                 ),
-                Expanded(
-                  child: Image.network(
-                    widget.postImageUrl,
-                  ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      widget.userName,
+                      style: const TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(height: 5.0),
+                    LimitedBox(
+                      maxHeight: 400.0,
+                      child: Image.network(
+                        widget.postImageUrl,
+                        fit: BoxFit.scaleDown,
+                      ),
+                    ),
+                    const SizedBox(height: 5.0),
+                    Text(widget.postText),
+                  ],
                 ),
-                Text(widget.postText)
-              ],
-            ),
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Icon(Icons.comment_outlined),
-              const SizedBox(height: 10.0),
-              LikeButton(isLiked: isLiked, onTap: toggleLike),
-              const SizedBox(height: 5.0),
-              Text(
-                widget.likes.length.toString(),
-                style: TextStyle(color: Colors.grey),
               ),
-            ],
-          )
-        ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                const Icon(Icons.comment_outlined),
+                const SizedBox(height: 10.0),
+                LikeButton(isLiked: isLiked, onTap: toggleLike),
+                const SizedBox(height: 5.0),
+                Text(
+                  widget.likes.length.toString(),
+                  style: TextStyle(color: Colors.grey),
+                ),
+                const SizedBox(height: 15.0),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
