@@ -28,8 +28,8 @@ class _PostState extends State<Post> {
 
   @override
   void initState() {
-    isLiked = widget.likes.contains(currentUser!.displayName);
     super.initState();
+    isLiked = widget.likes.contains(currentUser!.displayName);
   }
 
   void toggleLike() {
@@ -52,6 +52,7 @@ class _PostState extends State<Post> {
 
   @override
   Widget build(BuildContext context) {
+    isLiked = widget.likes.contains(currentUser!.displayName);
     return Container(
       decoration: BoxDecoration(
         color: Colors.grey[200],
