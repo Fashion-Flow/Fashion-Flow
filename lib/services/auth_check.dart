@@ -1,4 +1,4 @@
-import 'package:fashion_flow/screens/home_screen.dart';
+import 'package:fashion_flow/components/navigation.dart';
 import 'package:fashion_flow/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -13,7 +13,7 @@ class AuthCheck extends StatelessWidget {
       stream: FirebaseAuth.instance.authStateChanges(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return const HomeScreen();
+          return Navigation();
         } else {
           return const LoginScreen();
         }
