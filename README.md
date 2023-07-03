@@ -107,7 +107,39 @@ Ekstra koyulması gereken özellikler belirlenmiştir.
 
 - **Daily Scrum**: İletişimde kolaylık sağladığı için, Daily Scrum toplantılarını gerçekleştirmek için Discord platformunu kullanmaya devam ediyoruz.Daily Scrum toplantısı hakkında bilgileri içeren bir JPEG veya Word belgesini Readme dosyamızda bulabilirsiniz.
 
-[Sprint 1 Daily Scrum Chats][daily.docx](https://github.com/Fashion-Flow/Fashion-Flow/blob/main/assets/projectManagement/daily%20(2).docx)
+[Sprint 2 Daily Scrum Chats][daily.docx](https://github.com/Fashion-Flow/Fashion-Flow/blob/main/assets/projectManagement/daily%20(2).docx)
+
+
+
+- **Sprint board update**: Sprint board screenshotları: 
+![Backlog 1]<img width="1710" alt="Ekran Resmi 2023-06-19 00 02 56" src="https://github.com/Fashion-Flow/Fashion-Flow/blob/main/assets/projectManagement/WhatsApp%20Görsel%202023-07-03%20saat%2022.03.29.jpg">
+
+![Backlog 2]<img width="1710" alt="Ekran Resmi 2023-06-19 00 04 23" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/228449c5-5bc8-4838-984c-c14602289040">
+
+![Backlog 3]<img width="1710" alt="Ekran Resmi 2023-06-19 00 06 00" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/f3f1545e-159d-423b-8728-3401bc8028b8">
+
+- **Ürün Durumu**: Ekran görüntüleri:
+
+  ![Screenshot 1]
+
+<img width="351" alt="Ekran Resmi 2023-06-19 00 27 54" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/c3c267a8-a564-4426-9a68-9c0960d4b744">
+  
+
+  ![Screenshot 2]
+
+<img width="351" alt="Ekran Resmi 2023-06-19 00 28 03" src="https://github.com/Fashion-Flow/Fashion-Flow/assets/113055548/5d7bd182-4da7-4cda-92f5-bea47aec555b">
+
+  
+  - **Sprint Review**: 
+Alınan kararlar:
+Ekstra koyulması gereken özellikler belirlenmiştir.
+
+
+- **Sprint Retrospective:**
+  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır
+  - Tahmin puanları gözden geçirilmeli ve sprint planlama toplantılarında gerekli geri bildirimlerin developer'lar tarafından verildiğine emin olunmalı
+
+
 
 
 # Sprint 3
