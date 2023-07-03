@@ -6,6 +6,8 @@ import 'package:fashion_flow/constants/colors.dart';
 import 'package:fashion_flow/constants/strings.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import '../components/navigation.dart';
+
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});
 
@@ -194,7 +196,7 @@ class _EmailPasswordBoxState extends State<EmailPasswordBox> {
       if (context.mounted) Navigator.pop(context);
 
       if (newUser != null) {
-        Navigator.pushNamed(context, HomeScreen.routeName);
+        Navigator.pushNamed(context, Navigation.routeName);
       }
     } catch (e) {
       showDialog(
