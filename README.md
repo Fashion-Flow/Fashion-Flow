@@ -107,6 +107,8 @@ Ekstra koyulması gereken özellikler belirlenmiştir.
 
 - **Daily Scrum**: İletişimde kolaylık sağladığı için, Daily Scrum toplantılarını gerçekleştirmek için Discord platformunu kullanmaya devam ediyoruz.Daily Scrum toplantısı hakkında bilgileri içeren bir JPEG veya Word belgesini Readme dosyamızda bulabilirsiniz.
 
+[Sprint 1 Daily Scrum Chats][daily.docx](https://github.com/Fashion-Flow/Fashion-Flow/blob/main/assets/projectManagement/daily%20(2).docx)
+
 
 # Sprint 3
 
