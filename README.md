@@ -112,9 +112,10 @@ Ekstra koyulması gereken özellikler belirlenmiştir.
 
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1]<img width="1710" alt="https://github.com/Fashion-Flow/Fashion-Flow/blob/main/assets/projectManagement/Ekran_goruntusu_2023-07-03_215953.png">
 
-![Backlog 2]<img width="1710" alt="https://github.com/Fashion-Flow/Fashion-Flow/blob/main/assets/projectManagement/Ekran_goruntusu_2023-07-03_220731.png">
+![Backlog 1]<img width="1710" alt="Ekran Resmi 2023-06-19 00 02 56" src="https://github.com/Fashion-Flow/Fashion-Flow/blob/main/assets/projectManagement/Ekran_goruntusu_2023-07-03_215953.png">
+
+![Backlog 2]<img width="1710" alt="Ekran Resmi 2023-06-19 00 02 56" src="https://github.com/Fashion-Flow/Fashion-Flow/blob/main/assets/projectManagement/Ekran_goruntusu_2023-07-03_220731.png">
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
