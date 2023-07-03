@@ -98,8 +98,15 @@ Ekstra koyulması gereken özellikler belirlenmiştir.
 
 # Sprint 2
 
+- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+- Sprint 1 de tamamlanması beklenen bütün görevler takımca tamamlanmıştır. Yeni hedefler çizilip uygulamanın en kararlı şekilde çalışması için düzenlemeler yapılmıştır.
 
----
+- **Sprint içinde tamamlanması tahmin edilen puan**: 120 Puan
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. Takım üyelerinden bir kişinin aramızdan ayrılması sonucunda fikir çatışmaları yaşanmış fakat uygulamanın gelişme sürecine zarar vermeyecek şekilde yeni yollar çizilmiştir. Takım içi problemleri etkileyen sorunlardan ötürü Sprint 120 puan ile sonuçlanmıştır.
+
+- **Daily Scrum**: İletişimde kolaylık sağladığı için, Daily Scrum toplantılarını gerçekleştirmek için Discord platformunu kullanmaya devam ediyoruz.Daily Scrum toplantısı hakkında bilgileri içeren bir JPEG veya Word belgesini Readme dosyamızda bulabilirsiniz.
+
 
 # Sprint 3
 
