@@ -10,6 +10,8 @@ import 'package:provider/provider.dart';
 
 import '../components/navigation.dart';
 
+import '../components/navigation.dart';
+
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});
 
