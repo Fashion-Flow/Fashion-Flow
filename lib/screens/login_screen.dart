@@ -1,12 +1,45 @@
+import 'dart:js';
+
 import 'package:fashion_flow/components/navigation.dart';
+import 'package:fashion_flow/services-auth/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fashion_flow/constants/colors.dart';
 import 'package:fashion_flow/constants/strings.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:provider/provider.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class LoginScreen extends StatefulWidget {
+  final void Function ()? onTap;
+  const LoginScreen({super.key, required this.onTap});
+
+  @override
+  State<LoginScreen> createState() => _LoginScreenState();
+
+  class _LoginScreenState extends State<LoginScreen> {
+    // text controllers
+    final emailController = TextEditingController();
+    final passwordController = TextEditingController();
+  }
+
+
+  void signIn() {
+    // get the auth service
+    final authService = Provider.of<AuthService>(context, listen: false);
+
+    try {
+      await authService.signInWithEmailandPassword(emailController.text, passwordController.text,);
+    }catch(e){
+      scaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          e.toString()
+        ),
+      ),
+    );
+
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -138,7 +171,7 @@ class LoginScreen extends StatelessWidget {
                       },
                       child: const Text('Şimdi Kaydolun!'))
                 ],
-              )
+              ),
             ],
           ),
         ),

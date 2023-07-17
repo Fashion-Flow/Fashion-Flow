@@ -3,7 +3,7 @@ F-7 Team Fashion Flow
 
 ## Takım Elemanları
 - Muhammed Raşid Arslan : Product Owner
-- Soner Duran : Developer (UI/UX Designer)
+- Soner Duran : UI/UX Designer
 - Oğuzhan Öztürk : Scrum Master
 - Ali Mert Cesur : Developer
 
